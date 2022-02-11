@@ -93,6 +93,7 @@
     "choices.js": "^10.0.0",
     "focus-visible": "^5.2.0",
     "loaders.css": "^0.1.2",
+    "mailgo": "^0.12.2",
     "superplaceholder": "^1.0.0"
   }
 }
