@@ -6,13 +6,11 @@
     <!--#========== SETTING PAGE RESPONSIVENESS ==========#-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <!--#========== PAGE TITLE IN BROWSER ==========#-->
-    <title>TITLE SITE</title>
+    <title>Lionic</title>
     <!--#========== PRE-LOADING FONTS ==========#-->
-    <link href="fonts/" rel="preload" as="font" crossorigin>
-    <link href="fonts/" rel="preload" as="font" crossorigin>
-    <link href="fonts/" rel="preload" as="font" crossorigin>
-    <!--#========== CONNECT THE DARK THEME ==========#-->
-    <link href="css/dark-home.min.css?ver=1" rel="stylesheet" media="screen">
+    <link href="fonts/open-sans/open-sans-light.woff2" rel="preload" as="font" crossorigin>
+    <link href="fonts/open-sans/open-sans-regular.woff2" rel="preload" as="font" crossorigin>
+    <link href="fonts/open-sans/open-sans-semibold.woff2" rel="preload" as="font" crossorigin>
     <!--#========== CONNECTING READY-MADE JAVASCRIPT SOLUTIONS ==========#-->
     <link href="css/modules-home.min.css?ver=1" rel="stylesheet" media="screen">
     <!--#========== INCLUDING STYLE FILES ==========#-->
@@ -20,66 +18,33 @@
     <!--#========== PROVIDES INFORMATION ABOUT THE AUTHOR ==========#-->
     <link href="https://sineylo-dev.ru" rel="me">
     <link href="mailto:contact@sineylo-dev.ru" rel="me">
-    <!--#========== CONNECT COMMON FAVICONS ==========#-->
-    <link href="favicon.svg" rel="icon" sizes="any" type="image/svg+xml">
-    <link href="img/global/favicons/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
-    <link href="img/global/favicons/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
-    <link href="img/global/favicons/favicon-48x48.png" rel="icon" sizes="48x48" type="image/png">
-    <link href="img/global/favicons/favicon-64x64.png" rel="icon" sizes="64x64" type="image/png">
-    <!--#========== CONNECT FAVICONS FOR APPLE AS WELL AS SOME OF THEIR SETTINGS ==========#-->
-    <link href="img/global/favicons/favicon-180x180.png" rel="apple-touch-icon">
-    <link href="mask-desktop.svg" rel="mask-icon" color="#00а0ff">
-    <meta name="apple-mobile-web-app-title" content="Name of the site">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <!--#========== CONNECT THE MANIFEST WITH THE REST OF THE ICONS AND SETTINGS ==========#-->
     <link href="main.webmanifest" rel="manifest">
-    <meta name="application-name" content="Name of the WA or Site">
+    <meta name="application-name" content="Lionic">
     <!--#========== DISABLING LINK FORMATION ON IOS DEVICES ==========#-->
     <meta name="format-detection" content="telephone=no">
     <meta name="format-detection" content="address=no">
     <!--#========== SEO ==========#-->
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="lawyers, online consultations, effectively, legal assistance, documents">
+    <meta name="keywords" content="We provide fast and effective legal advice online">
     <!--#========== BRIEF DESCRIPTION OF THE TOPIC OF THE PAGE ==========#-->
-    <meta name="subject" content="">
+    <meta name="subject" content="Legal advice">
     <!--#========== CONTROLLING SEARCH ROBOTS ACCESS TO THE PAGE ==========#-->
     <meta name="robots" content="none">
     <meta name="googlebot" content="none">
     <!--#========== PAGE AUTHOR ==========#-->
-    <meta name="author" content="">
+    <meta name="author" content="SineYlo">
     <!--#========== COPYRIGHT ==========#-->
-    <meta name="copyright" content="">
+    <meta name="copyright" content="Lionic">
     <!--#========== AUTHOR'S ADDRESS ==========#-->
-    <meta name="address" content="">
+    <meta name="address" content="Russia, Khabarovsk">
     <!--#========== SETS THE COLOR OF THE BROWSER TAB ==========#-->
     <meta name="theme-color" content="hsl(0 0% 100%)">
     <!--#========== THEMES TO BE USED ON THE SITE ==========#-->
     <meta name="color-scheme" content="light">
     <!--#========== ADDS THE SITE TO THE HOME SCREEN AS AN ANDROID APP ==========#-->
     <meta name="mobile-web-app-capable" content="yes">
-    <!--#========== ESTABLISHES AGE RESTRICTION ==========#-->
-    <meta name="rating" content="general">
-    <!--#========== CUSTOMIZING THE SHARE FACEBOOK BUTTON ==========#-->
-    <meta property="og:locale" content="ru_RU">
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="my site">
-    <meta property="og:description" content="some page description">
-    <meta property="og:image" content="url">
-    <meta property="og:image:alt" content="photo description">
-    <meta property="og:url" content="http://localhost:3000/index.html">
-    <meta property="og:site_name" content="training ground">
-    <!--#========== CUSTOMIZING THE SHARE TWITTER BUTTON ==========#-->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="site account">
-    <meta name="twitter:creator" content="SineYlo">
-    <meta name="twitter:url" content="url">
-    <meta name="twitter:title" content="my site">
-    <meta name="twitter:description" content="some page description">
-    <meta name="twitter:image" content="url">
-    <meta name="twitter:image:alt" content="photo description">
     <!--#========== CONNECT SCRIPTS ==========#-->
-    <script src="js/modules-home.min.js"></script>
     <script src="js/main.min.js" defer></script>
   </head>
   <body class="body page__body">
@@ -87,12 +52,18 @@
     @@include("kit/templates/_header.html")
     <!--#========== THE MAIN PART OF THE SITE ==========#-->
     <main class="site-main">
-      <!--#========== CONNECT THE SECTION | ==========#-->
-      <!-- @@include("kit/components/home") -->
-      <!--#========== CONNECT THE SECTION | ==========#-->
-      <!-- @@include("kit/components/home") -->
-      <!--#========== CONNECT THE SECTION | ==========#-->
-      <!-- @@include("kit/components/home") -->
+      <!--#========== CONNECT THE SECTION | HERO ==========#-->
+      @@include("kit/components/home/_hero.html")
+      <!--#========== CONNECT THE SECTION | SERVICES ==========#-->
+      @@include("kit/components/home/_services.html")
+      <!--#========== CONNECT THE SECTION | ARTICLES ==========#-->
+      @@include("kit/components/home/_articles.html")
+      <!--#========== CONNECT THE SECTION | CLIENTS ==========#-->
+      @@include("kit/components/home/_clients.html")
+      <!--#========== CONNECT THE SECTION | CONTACTS ==========#-->
+      @@include("kit/components/home/_contacts.html")
+      <!--#========== CONNECT THE SECTION | JOIN ==========#-->
+      @@include("kit/components/home/_join.html")
     </main>
     <!--#========== CONNECT THE SITE FOOTER ==========#-->
     @@include("kit/templates/_footer.html")

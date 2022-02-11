@@ -1,2 +1,4 @@
 // |=============== CONNECTING FONTS ===============>
-// @include addFont($nameFontFamily, $pathToWoff2, $pathToWoff, $fw, $fs);
+@include addFont(Open Sans, open-sans/open-sans-light, open-sans/open-sans-light, 300, normal);
+@include addFont(Open Sans, open-sans/open-sans-regular, open-sans/open-sans-regular, 400, normal);
+@include addFont(Open Sans, open-sans/open-sans-semibold, open-sans/open-sans-semibold, 600, normal);

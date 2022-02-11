@@ -1,7 +1,7 @@
 {
-  "name": "project-name",
+  "name": "lionic",
   "version": "1.0.0",
-  "description": "Some description of the project.",
+  "description": "We provide fast and effective legal advice online",
   "main": "gulpfile.babel.js",
   "scripts": {
     "prepare": "husky install",
@@ -23,23 +23,23 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SineYlo/Starter-Template.git"
+    "url": "git+https://github.com/SineYlo/lionic.git"
   },
   "keywords": [
-    "keyword-1",
-    "keyword-2",
-    "keyword-3",
-    "keyword-4",
-    "keyword-5"
+    "lawyers",
+    "online consultations",
+    "effectively",
+    "legal assistance",
+    "documents"
   ],
   "author": "SineYlo",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/SineYlo/Starter-Template/issues"
+    "url": "https://github.com/SineYlo/lionic/issues"
   },
-  "homepage": "https://github.com/SineYlo/Starter-Template#readme",
+  "homepage": "https://github.com/SineYlo/lionic#readme",
   "devDependencies": {
-    "@babel/core": "^7.17.0",
+    "@babel/core": "^7.17.2",
     "@babel/eslint-parser": "^7.17.0",
     "@babel/preset-env": "^7.16.11",
     "@babel/register": "^7.17.0",
@@ -82,11 +82,17 @@
     "postcss-pxtorem": "^6.0.0",
     "postcss-will-change": "^4.0.1",
     "sass": "^1.49.7",
-    "stylelint": "^14.3.0",
+    "stylelint": "^14.4.0",
     "stylelint-declaration-block-no-ignored-properties": "^2.5.0",
     "stylelint-order": "^5.0.0",
     "stylelint-scss": "^4.1.0",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
+  },
+  "dependencies": {
+    "choices.js": "^10.0.0",
+    "focus-visible": "^5.2.0",
+    "loaders.css": "^0.1.2",
+    "superplaceholder": "^1.0.0"
   }
 }

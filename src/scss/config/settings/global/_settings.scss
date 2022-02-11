@@ -1,1 +1,4 @@
 // |=============== HERE WE DESCRIBE THE DIFFERENT SETTINGS FOR THIRD-PARTY PLUGINS ===============>
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
