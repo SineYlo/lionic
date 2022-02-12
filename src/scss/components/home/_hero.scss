@@ -1,0 +1,62 @@
+.section-hero {
+  padding: 113px 0 134px;
+  background: url("../img/home/1920/hero/fr-lawyers-bg.jpg") right / cover no-repeat;
+
+  &__title {
+    margin-bottom: 26px;
+    max-width: 529px;
+    font-weight: $primary-font-weight;
+    font-size: $text-size-huge;
+    line-height: 52px;
+    color: $seventh-color;
+  }
+
+  &__desc {
+    margin-bottom: 34px;
+    max-width: 471px;
+    line-height: 25px;
+  }
+
+  &__day-trial {
+    position: relative;
+    margin-bottom: 14px;
+    padding: 19px 58px;
+    min-width: 250px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -3px;
+      right: -3px;
+      top: -3px;
+      bottom: -3px;
+      border: 1px solid transparent;
+      border-radius: inherit;
+    }
+
+    &.focus-visible::before {
+      border-color: $primary-color-effects;
+    }
+  }
+
+  &__secure {
+    position: relative;
+    display: block;
+    max-width: 143px;
+    font-size: $text-size-min-large;
+    line-height: 17px;
+    text-transform: uppercase;
+    transform: translateX(67px);
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -27px;
+      top: 0;
+      display: inline-block;
+      width: 14px;
+      height: 17px;
+      background: url("../img/sprites.svg#icon-secure-bg") 0 0 / 14px 17px no-repeat;
+    }
+  }
+}

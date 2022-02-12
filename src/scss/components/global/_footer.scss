@@ -1,0 +1,139 @@
+.site-footer {
+  padding: 44px 0 45px;
+
+  &__container {
+    @include f-ai-center;
+  }
+
+  &__logo {
+    margin-right: 25px;
+  }
+
+  &__copy {
+    margin-right: auto;
+    font-size: $text-size-min-huge;
+    line-height: 16px;
+  }
+
+  &__list {
+    margin-right: 56px;
+  }
+}
+
+.list-footer {
+  @include f-center-sb;
+
+  width: min(100%, 449px);
+
+  &__link {
+    position: relative;
+    display: inline-block;
+    font-weight: $second-font-weight;
+    font-size: $text-size-small;
+    line-height: 20px;
+    transition: color $medium-transition-duration ease-in-out;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      outline: 1px solid transparent;
+      outline-offset: 2px;
+      transition: outline-color $medium-transition-duration ease-in-out;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 20px;
+      display: inline-block;
+      width: 100%;
+      height: 2px;
+      background-color: transparent;
+      transition: background-color $medium-transition-duration ease-in-out;
+    }
+
+    &:hover {
+      color: $primary-color-effects;
+    }
+
+    &:focus {
+      outline: 0;
+    }
+
+    &:active {
+      color: $primary-color;
+    }
+
+    &:active::after {
+      background-color: currentColor;
+    }
+
+    &.focus-visible::before {
+      outline-color: $primary-color-effects;
+    }
+  }
+}
+
+.socials-footer {
+  @include f-center-sb;
+
+  width: min(100%, 10.51282%);
+
+  &__link {
+    position: relative;
+    display: inline-block;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      outline: 1px solid transparent;
+      outline-offset: 4px;
+      transition: outline-color $medium-transition-duration ease-in-out;
+    }
+
+    &_mail {
+      stroke: $black-color;
+    }
+
+    &_tw:hover .socials-footer__icon,
+    &_in:hover .socials-footer__icon {
+      fill: $primary-color-effects;
+    }
+
+    &_mail:hover .socials-footer__icon {
+      stroke: $primary-color-effects;
+    }
+
+    &_tw:active .socials-footer__icon,
+    &_in:active .socials-footer__icon {
+      fill: $primary-color;
+    }
+
+    &_mail:active .socials-footer__icon {
+      stroke: $primary-color;
+    }
+
+    &:focus {
+      outline: 0;
+    }
+
+    &.focus-visible::before {
+      outline-color: $primary-color-effects;
+    }
+  }
+
+  &__icon {
+    transition-property: fill, stroke;
+    transition-duration: $medium-transition-duration;
+    transition-timing-function: ease-in-out;
+  }
+}

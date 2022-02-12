@@ -1,0 +1,79 @@
+.section-contacts {
+  border-bottom: 1px solid $third-color;
+  padding: 87px 0 159px;
+
+  &__title {
+    margin-bottom: 109px;
+  }
+}
+
+.list-contacts {
+  @include flex;
+
+  &__item {
+    padding-top: 48px;
+
+    &_visit {
+      margin-right: 15.89744%;
+      max-width: 214px;
+      background: url("../img/sprites.svg#icon-location-bg") 0 0 / 29px 29px no-repeat;
+    }
+
+    &_call {
+      margin-right: 23.84615%;
+      max-width: 121px;
+      background: url("../img/sprites.svg#icon-phone-bg") 0 0 / 29px 29px no-repeat;
+    }
+
+    &_email {
+      max-width: 170px;
+      background: url("../img/sprites.svg#icon-email-bg") 0 0 / 29px 29px no-repeat;
+    }
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    font-weight: $second-font-weight;
+    font-size: $text-size-medium;
+    line-height: 31px;
+    color: $seventh-color;
+  }
+
+  &__text {
+    display: block;
+    font-size: $text-size-tiny;
+    line-height: 25px;
+
+    &_link {
+      position: relative;
+      transition: color $medium-transition-duration ease-in-out;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        outline: 1px solid transparent;
+        outline-offset: 1px;
+      }
+
+      &:hover {
+        color: $primary-color-effects;
+      }
+
+      &:focus {
+        outline: 0;
+      }
+
+      &:active {
+        color: $second-color-effects;
+      }
+
+      &.focus-visible::before {
+        outline-color: $primary-color-effects;
+      }
+    }
+  }
+}

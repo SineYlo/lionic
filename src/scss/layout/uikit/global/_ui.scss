@@ -7,3 +7,65 @@
     position: relative;
   }
 }
+
+.body {
+  padding-top: 110px;
+  font-family: $primary-font-family;
+  color: $fifth-color;
+
+  &__loader-site {
+    @include flex;
+
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: $z-modal;
+    align-items: center;
+    justify-content: center;
+    background-color: $white-color;
+  }
+}
+
+.container {
+  @include containerBase(1230px, 30px);
+}
+
+.btn {
+  border-radius: $primary-br;
+  font-weight: $second-font-weight;
+  font-size: $text-size-small;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $white-color;
+  background-color: $primary-color;
+  transition: background-color $medium-transition-duration ease-in-out;
+
+  &:hover {
+    background-color: $primary-color-effects;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+
+  &:active {
+    background-color: $second-color-effects;
+  }
+
+  &:disabled {
+    background-color: $fourth-color;
+  }
+}
+
+.title {
+  font-weight: $primary-font-weight;
+  font-size: $text-size-large;
+  line-height: 47px;
+  color: $seventh-color;
+}
+
+.desc {
+  line-height: 22px;
+}

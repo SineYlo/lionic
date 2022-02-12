@@ -1,0 +1,118 @@
+.section-articles {
+  border-bottom: 1px solid $third-color;
+  padding: 87px 0 159px;
+
+  &__title {
+    margin-bottom: 42px;
+  }
+}
+
+.list-articles {
+  @include grid;
+
+  align-items: stretch;
+  grid-auto-flow: dense;
+  grid-auto-rows: minmax(180px, auto);
+  grid-template: 1fr / repeat(2, minmax(auto, 570px));
+  gap: $second-gap;
+
+  &__link {
+    display: block;
+    height: 100%;
+
+    &:hover .list-articles__content {
+      border-color: $primary-color;
+      background-color: $primary-color;
+    }
+
+    &:hover .list-articles__date,
+    &:hover .list-articles__title,
+    &:hover .list-articles__desc,
+    &:active .list-articles__date,
+    &:active .list-articles__title,
+    &:active .list-articles__desc,
+    &.focus-visible .list-articles__date,
+    &.focus-visible .list-articles__title,
+    &.focus-visible .list-articles__desc {
+      color: $white-color;
+    }
+
+    &:focus {
+      outline: 0;
+    }
+
+    &:active .list-articles__content {
+      border-color: $second-color-effects;
+      background-color: $second-color-effects;
+    }
+
+    &.focus-visible .list-articles__content {
+      border-color: $primary-color-effects;
+      background-color: $primary-color-effects;
+    }
+  }
+
+  &__content {
+    position: relative;
+    border: 1px solid $second-color;
+    border-radius: $second-br;
+    padding: 18px 30px 37px 200px;
+    min-height: 100%;
+    transition-property: background-color, border-color;
+    transition-duration: $medium-transition-duration;
+    transition-timing-function: ease-in-out;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -1px;
+      top: -1px;
+      display: inline-block;
+      border-radius: $second-br 0 0 $second-br;
+      width: 170px;
+      min-height: calc(100% + 2px);
+    }
+
+    &_buildings::before {
+      background: url("../img/home/1920/articles/fr-buildings-bg.png") center / cover no-repeat;
+    }
+
+    &_consultation::before {
+      background: url("../img/home/1920/articles/fr-consultation-bg.png") center / cover no-repeat;
+    }
+
+    &_folders::before {
+      background: url("../img/home/1920/articles/fr-folders-bg.png") center / cover no-repeat;
+    }
+
+    &_talks::before {
+      background: url("../img/home/1920/articles/fr-talks-bg.png") center / cover no-repeat;
+    }
+  }
+
+  &__date,
+  &__title,
+  &__desc {
+    transition: color $medium-transition-duration ease-in-out;
+  }
+
+  &__date {
+    display: inline-block;
+    font-size: $text-size-min-big;
+    line-height: 15px;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+    font-weight: $second-font-weight;
+    font-size: $text-size-big;
+    line-height: 26px;
+    color: $seventh-color;
+  }
+
+  &__desc {
+    max-width: 210px;
+    font-size: $text-size-tiny;
+    line-height: 21px;
+  }
+}

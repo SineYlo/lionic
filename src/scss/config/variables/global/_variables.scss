@@ -13,9 +13,15 @@ $fourth-color: hsl(0 0% 77%);
 $fifth-color: hsl(0 0% 47%);
 $sixth-color: hsl(0 0% 42%);
 $seventh-color: hsl(0 0% 11%);
+$eighth-color: hsl(0 0% 42% / 0.3);
+$ninth-color: hsl(0 0% 85% / 0.6);
+$tenth-color: hsl(0 0% 79%);
+$eleventh-color: hsl(0 0% 47% / 0.6);
+$twelfth-color: hsl(0 0% 0% / 0.1);
 // |CM| Colors for effects
 $primary-color-effects: hsl($hue-color 66% 66%);
 $second-color-effects: hsl($hue-color 76% 24%);
+$third-color-effects: hsl($hue-color 66% 66% / 0.2);
 // |CM| Universal colors
 $white-color: hsl(0 0% 100%);
 $black-color: hsl(0 0% 0%);
@@ -60,4 +66,5 @@ $medium-transition-duration: 0.3s;
 
 // |=============== Z-INDEX ===============>
 // |CM| Ready z-index values for different components
+$primary-z: 2;
 $z-modal: 1000;

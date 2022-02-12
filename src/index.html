@@ -46,8 +46,18 @@
     <meta name="mobile-web-app-capable" content="yes">
     <!--#========== CONNECT SCRIPTS ==========#-->
     <script src="js/main.min.js" defer></script>
+    <!--#========== IF THE SCRIPTS DON'T LOAD ==========#-->
+    <noscript>
+      <style>
+        .site-loader {
+          display: none;
+        }
+      </style>
+    </noscript>
   </head>
   <body class="body page__body">
+    <!--#========== CONNECT LOADER ==========#-->
+    @@include("kit/components/home/_loader.html")
     <!--#========== CONNECT THE SITE HEADER ==========#-->
     @@include("kit/templates/_header.html")
     <!--#========== THE MAIN PART OF THE SITE ==========#-->

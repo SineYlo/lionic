@@ -10,6 +10,8 @@
 @import "layout/uikit/global/ui";
 // |=============== CONNECTING GLOBAL PLUGIN SETTINGS ===============>
 @import "config/settings/global/settings";
+// |=============== CONNECTING LOADER ===============>
+@import "components/home/loader";
 // |=============== CONNECTING THE GLOBAL SITE HEADER ===============>
 @import "components/global/header";
 // |----->

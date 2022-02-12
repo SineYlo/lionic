@@ -7,52 +7,42 @@
       Take control of&nbsp;your paid subscriptions today!
     </p>
     <form class="form-join section-join__form" name="formJoin" action="https://postman-echo.com/post" method="post">
-      <div class="form-join_wrapper">
-        <div class="form-join__inner form-join__inner_name">
-          <label class="form-join__label" for="field-name">
-            Enter your name.
-          </label>
-          <input class="form-join__field form-join__field_name" id="field-name" type="text" name="formJoinFieldName" placeholder="Name" translate="no" autocapitalize="words" autocorrect="false" autocomplete="name" spellcheck="false" required>
-        </div>
-        <div class="form-join__inner form-join__inner_email">
-          <label class="form-join__label" for="field-email">
-            Enter your email address.
-          </label>
-          <input class="form-join__field form-join__field_email" id="field-email" type="email" name="formJoinFieldEmail" placeholder="Email" translate="no" autocapitalize="off" autocorrect="false" autocomplete="email" spellcheck="false" required>
-        </div>
-        <div class="form-join__inner form-join__inner_message">
-          <label class="form-join__label" for="field-message">
-            Enter a&nbsp;message.
-          </label>
-          <textarea class="form-join__field form-join__field_message" id="field-message" name="formJoinFieldMessage" placeholder="Comment" translate="no" autocapitalize="sentences" autocorrect="true" autocomplete="off" spellcheck="true" required></textarea>
-        </div>
-        <div class="form-join__inner form-join__inner_phone">
-          <label class="form-join__label" for="field-phone">
-            Enter your phone number.
-          </label>
-          <input class="form-join__field form-join__field_phone" id="field-phone" type="tel" name="formJoinFieldPhone" placeholder="Phone" translate="no" autocapitalize="off" autocorrect="false" autocomplete="tel" spellcheck="false">
-        </div>
-        <div class="form-join__inner form-join__inner_country">
-          <label class="form-join__label" for="field-country">
-            Select a&nbsp;country.
-          </label>
-          <select class="form-join__field form-join__field_country" id="field-country" name="formJoinFieldCountry">
-            <option value="">Country</option>
-            <option value="uk">United Kingdom</option>
-            <option value="us">United States</option>
-            <option value="fr">France</option>
-            <option value="de">Germany</option>
-            <option value="is">Spain</option>
-            <option value="sz">Estonia</option>
-          </select>
-        </div>
+      <div class="form-join__wrapper">
+        <label class="form-join__label" for="field-name">
+          Enter your name.
+        </label>
+        <input class="form-join__field form-join__field_name" id="field-name" type="text" name="formJoinFieldName" placeholder="Name" translate="no" autocapitalize="words" autocorrect="false" autocomplete="name" spellcheck="false" required>
+        <label class="form-join__label" for="field-email">
+          Enter your email address.
+        </label>
+        <input class="form-join__field form-join__field_email" id="field-email" type="email" name="formJoinFieldEmail" placeholder="Email" translate="no" autocapitalize="off" autocorrect="false" autocomplete="email" spellcheck="false" required>
+        <label class="form-join__label" for="field-message">
+          Enter a&nbsp;message.
+        </label>
+        <textarea class="form-join__field form-join__field_message" id="field-message" name="formJoinFieldMessage" placeholder="Comment" translate="no" autocapitalize="sentences" autocorrect="true" autocomplete="off" spellcheck="true" required></textarea>
+        <label class="form-join__label" for="field-phone">
+          Enter your phone number.
+        </label>
+        <input class="form-join__field form-join__field_phone" id="field-phone" type="tel" name="formJoinFieldPhone" placeholder="Phone" translate="no" autocapitalize="off" autocorrect="false" autocomplete="tel" spellcheck="false">
+        <label class="form-join__label" for="field-country">
+          Select a&nbsp;country.
+        </label>
+        <select class="form-join__field form-join__field_country" id="field-country" name="formJoinFieldCountry">
+          <option value="">Country</option>
+          <option value="uk">United Kingdom</option>
+          <option value="us">United States</option>
+          <option value="fr">France</option>
+          <option value="de">Germany</option>
+          <option value="is">Spain</option>
+          <option value="sz">Estonia</option>
+        </select>
       </div>
       <button class="btn form-join__started">
         Get started
       </button>
       <div class="form-join__box">
-        <input class="form-join__field form-join__field_agree" id="field-agree" type="checkbox" name="formJoinFieldAgree" value="yes" required>
-        <label class="form-join__label" for="field-agree">
+        <input class="form-join__field-agree" id="field-agree" type="checkbox" name="formJoinFieldAgree" value="yes" checked required>
+        <label class="form-join__label-agree" for="field-agree">
           I&nbsp;agree with the <a class="form-join__agreement" href="#">user agreement</a>
         </label>
       </div>

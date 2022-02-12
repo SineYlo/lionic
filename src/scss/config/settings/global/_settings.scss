@@ -1,4 +1,8 @@
 // |=============== HERE WE DESCRIBE THE DIFFERENT SETTINGS FOR THIRD-PARTY PLUGINS ===============>
 .js-focus-visible :focus:not(.focus-visible) {
-  outline: none;
+  outline: 0;
+}
+
+.m-modal .m-modal-back {
+  cursor: pointer;
 }

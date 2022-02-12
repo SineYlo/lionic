@@ -1,0 +1,58 @@
+.section-clients {
+  border-bottom: 1px solid $third-color;
+  padding: 87px 0 161px;
+
+  &__title {
+    margin-bottom: 42px;
+  }
+}
+
+.list-clients {
+  @include grid;
+
+  grid-auto-flow: dense;
+  grid-auto-rows: minmax(362px, auto);
+  grid-template: minmax(362px, auto) / repeat(3, minmax(auto, 370px));
+  gap: $second-gap;
+
+  &__content {
+    border: 1px solid $eighth-color;
+    border-radius: $second-br;
+    padding: 51px 37px 28px 36px;
+    min-height: 100%;
+  }
+
+  &__text {
+    margin-bottom: 33px;
+    max-width: 285px;
+    font-size: $text-size-tiny;
+    line-height: 25px;
+  }
+
+  &__info {
+    @include f-ai-center;
+
+    border-top: 1px solid $ninth-color;
+    padding-top: 26px;
+  }
+
+  &__picture {
+    margin-right: 17px;
+    border: 2px solid $primary-color;
+    border-radius: $fifth-br;
+    box-sizing: content-box;
+  }
+
+  &__title {
+    font-weight: $second-font-weight;
+    font-size: $text-size-medium;
+    line-height: 31px;
+    color: $seventh-color;
+  }
+
+  &__post {
+    display: inline-block;
+    font-size: $text-size-tiny;
+    line-height: 25px;
+  }
+}

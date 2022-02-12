@@ -1,0 +1,24 @@
+.site-loader {
+  &__el {
+    .ball-clip-rotate-multiple &:last-child {
+      border-color: $black-color transparent;
+    }
+
+    .ball-clip-rotate-multiple > & {
+      border-top-color: $black-color;
+      border-bottom-color: $black-color;
+    }
+  }
+
+  .loader-hidden & {
+    opacity: 0;
+    visibility: hidden;
+    transition-property: opacity, visibility;
+    transition-duration: $medium-transition-duration;
+    transition-timing-function: ease-in-out;
+  }
+
+  .loaded & {
+    display: none;
+  }
+}
